@@ -12,7 +12,7 @@
 
 ## SQL-FACT_InternetSales
 
-'''SQL
+'''
 SELECT 
   [ProductKey], 
   [OrderDateKey], 
