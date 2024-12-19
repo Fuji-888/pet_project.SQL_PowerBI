@@ -8,4 +8,23 @@
 ![Иллюстрация к проекту](https://github.com/Fuji-888/pet_project_SQL_PBI/blob/main/Анализ%20проекта%20относительно%20бизнес-пользователя%20и%20цели%20работы.png)
 
 ## Преобразование данных с помощью SQL
-Далее из базы данных (общедоступная AdventureWorks) с помощью SQL я извлек необходимые мне таблицы и преобразовал их. Сохранил все таблицы в формате csv.  
+Далее из базы данных (общедоступная AdventureWorks) с помощью SQL я извлек необходимые мне таблицы и преобразовал их. Сохранил все таблицы в формате csv. Код с комментариями. 
+
+## SQL-FACT_InternetSales
+
+'''SQL
+SELECT 
+  [ProductKey], 
+  [OrderDateKey], 
+  [DueDateKey], 
+  [ShipDateKey], 
+  [CustomerKey], 
+  [SalesOrderNumber], 
+  [SalesAmount] 
+FROM 
+  [AdventureWorksDW2019].[dbo].[FactInternetSales]
+WHERE 
+  LEFT (OrderDateKey, 4) >= 2019 -- Мог бы сделать YEAR(GETDATE())-2, чтобы показывались значения за 2 последних года, как написано в ТЗ (если база будет обновляться - то лучше сделать так), но база данных только до 2021 года, поэтому ставлю 2019 год
+ORDER BY
+  OrderDateKey ASC
+'''
