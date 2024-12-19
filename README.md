@@ -1,5 +1,12 @@
 # Проект для портфолио аналитика данных - дашборд для анализа продаж.
 
+![Иллюстрация к проекту](https://github.com/Fuji-888/pet_project_SQL_PBI/blob/main/Dashboard.png)
+
+![Иллюстрация к проекту](https://github.com/Fuji-888/pet_project_SQL_PBI/blob/main/sql1.png)
+
+![Иллюстрация к проекту](https://github.com/Fuji-888/pet_project_SQL_PBI/blob/main/sql2.png)
+
+ 
   Я представил себя на месте аналитика данных и сделал дашборд для отслеживания показателей, связанных с продажами.
 
 ## Таблица 
