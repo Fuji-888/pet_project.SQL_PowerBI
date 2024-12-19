@@ -12,7 +12,7 @@
 
 ## SQL-FACT_InternetSales
 
-'''
+```sql
 SELECT 
   [ProductKey], 
   [OrderDateKey], 
@@ -27,4 +27,4 @@ WHERE
   LEFT (OrderDateKey, 4) >= 2019 -- Мог бы сделать YEAR(GETDATE())-2, чтобы показывались значения за 2 последних года, как написано в ТЗ (если база будет обновляться - то лучше сделать так), но база данных только до 2021 года, поэтому ставлю 2019 год
 ORDER BY
   OrderDateKey ASC
-'''
+```
